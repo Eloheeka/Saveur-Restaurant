@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+    header{
+            background-color: white;
+        }
+    .hero-section{
+            background-image: url('saveur2.jpg');
+           background-size: cover;
+           position: relative; 
+            height:100vh;
+        }
+    .hero-section h1{
+            font-size:4rem;
+            font-weight:300;
+            letter-spacing:2px;
+        }
+        .hero-content{
+           
+            z-index: 1;
+        }
+    .hero-section::before {
+        content: "";
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+        z-index: 1;
+}
+
+    .hero-content {
+       position: relative;
+       z-index: 2; /* Put text above the overlay */
+       color: white;
+    
+}
+.story{
+  background-color: rgb(255, 255, 255);
+}
+
+img{
+  height:400px;
+  width: 400px;
+}
+#Menu ::after{
+  height:60vh;
+}
+nav{
+  position: sticky;
+  top:0;
+  right:0;
+}
+
+     
+       
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <!--navbar-->
+   <header>
+    <nav class=" navbar navbar-expand-lg bg-white fixed-top">
+  <!--toggle-->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">  </span>
+  </button>
+        <!--navlinks-->
+        <div class="container-fluid">
+            <nav class="nav-brand  fw-bold fs-5 ms-0 align-items-start">Saveur</nav>
+            <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        <a href="#Menu" class="nav-link">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#About" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link">CONTACT</a>
+                    </li> 
+                
+               
+            </ul>
+        </div>
+    
+            <button  type="submit" class="btn btn-outline-dark">Reserve a Table</button>
+        </div>
+        </div>
+    </nav>
+   </header>
+
+   <!--hero section-->
+
+     <div class="hero-section d-flex  align-items-center  justify-content-center text-center text-white">
+        <div class="hero-content">
+            <h1 class=" display-4 text-uppercase text-center mt-5">Experience Fine <br> Dining at its Best</h1>
+            <p class="lead mb-4">Savour exquisite cuisine in an elegant atmosphere</p>
+            <div class="buttons">
+                <a href="#" class="btn btn-warning me-2">Reserve a Table</a>
+                <a href="#" class="btn btn-outline-light">Learn more</a>
+            </div>
+        </div>
+     </div>
+
+     <!--Menu-->
+     <div id="Menu" class="title text-center mt-5 mb-5">
+      <h3 style="color:black">Our Menu</h3>
+      <p style="color:black">Discover our carefully curated menu featuring seasonal ingredients and classic techniques</p>
+     </div>
+       <div class="row g-4 mt-5">
+          <div class="col-md-6">
+            <div class="border rounded p-4 h-100 d-flex justify-content-between align-items-center">
+              <div class="text-start">
+                <h5 class="fw-bold mb-2">Pan-Seared Scallops</h5>
+                <p class="mb-0 text-muted">Fresh sea scallops with citrus butter sauce</p>
+              </div>
+              <span class="fw-bold text-warning">$32</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="border rounded p-4 h-100 d-flex justify-content-between align-items-center">
+              <div class="text-start">
+                <h5 class="fw-bold mb-2">Truffle Risotto</h5>
+                <p class="mb-0 text-muted">Creamy Arborio rice with black truffle</p>
+              </div>
+              <span class="fw-bold text-warning">$28</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="border rounded p-4 h-100 d-flex justify-content-between align-items-center">
+              <div class="text-start">
+                <h5 class="fw-bold mb-2">Braised Short Rib</h5>
+                <p class="mb-0 text-muted">Slow-cooked beef with root vegetables</p>
+              </div>
+              <span class="fw-bold text-warning">$35</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="border rounded p-4 h-100 d-flex justify-content-between align-items-center">
+              <div class="text-start">
+                <h5 class="fw-bold mb-2">Lobster Thermidor</h5>
+                <p class="mb-0 text-muted">Classic French preparation with cognac sauce</p>
+              </div>
+              <span class="fw-bold text-warning">$45</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-outline-primary btn-sm p-2 mt-3 mb-5">Explore More➡️</a>
+          </div>
+        
+       </div>
+<!--About-->
+<div id="About" class="story mx-5 mb-5">
+  <div class="row g-3">
+    <h2 class="text-center my-5">More About Us...</h2>
+    <div class="col-md-6">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="text-start my-5">
+          <h2 style="color:black">Our Story</h2>
+          <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat expedita commodi, aliquam doloribus magni nostrum labore voluptates adipisci optio consequatur id nam dicta asperiores perferendis non! Odio assumenda ex natus architecto maxime aspernatur porro vel consequuntur deleniti voluptatum. Ex, maxime.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam amet eius, sit aperiam ipsa voluptatum sunt incidunt fugit similique porro.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class=" d-flex justify-content-between align-items-center">
+        <div class="text-start">
+          <img src="saveur1.jpg"  class="mx-5" alt="Our Speciality">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--visit us-->
+<footer id="Contact" class="mt-5 mb-5">
+  <div class="container">
+  <h2 class="text-center mt-5" style="color:black">Visit Us</h2>
+  <div class="row g-4 mt-5">
+    <div class=" h-100 d-flex justify-content-between align-items-center">
+        <div class="col-md-4 border rounded p-4">
+          <div class="text-start">
+            <i class="bi bi-geo-alt"></i>
+            <h2 class="text-center" style="color:black">Location</h2>
+            <p class="text-center">123 Culinary Street <br> Foodie City, FC 12345</p>
+          </div>
+        </div>
+        <div class="col-md-4 border rounded p-4 mx-5">
+          <div class="text-start">
+            <i class="bi bi-geo-alt"></i>
+            <h2 class="text-center" style="color:black">Hours</h2>
+            <p class="text-center">Tue-Sun 5:30 PM-10:30 PM <br> Closed Mondays</p>
+          </div>
+        </div>
+        <div class="col-md-4 border rounded p-4">
+          <div class="text-start">
+            <i class="bi bi-geo-alt"></i>
+            <h2 class="text-center" style="color:black">Contact</h2>
+            <p class="text-center">(555) 123-4567 <br>reservation@aveur.com</p>
+          </div>
+        </div>
+    </div>
+  </div> 
+</div>  
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
